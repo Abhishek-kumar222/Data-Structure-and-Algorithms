@@ -15,10 +15,16 @@ while(Srow <= Erow && Scol <= Ecol){
   }
 
   for(int k=Ecol-1; k>=Scol; k--){
+    if(Scol==Ecol){
+        break;
+    }
     cout<<arr[Erow][k]<<" ";
   }
 
   for(int l=Erow-1; l>=Scol+1; l--){
+    if(Scol==Ecol){
+        break;
+    } 
     cout<<arr[l][Scol]<<" ";
   }
 
